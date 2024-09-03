@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParstooMajidiPortFolio</title>
+    <title>📍ParstooMajidiPortFolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,35 +12,66 @@
 
    <div class="bg-zinc-950 p-2">
     <!-- menu -->
-    <header class="menu rounded-b-lg h-20 bg-zinc-700 flex justify-between p-4">
+    <nav class="menu rounded-b-lg h-20 bg-zinc-700 flex justify-between p-4">
         <!-- My logo -->
          <section>
             <h1 class="font-bold text-4xl text-white">P</h1>
          </section>
-        <!--selection menu -->
-        <section >
-           <ul class="flex justify-between gap-3 text-white">
-            <li> <a class="hover:text-indigo-400 " href="https://drive.google.com/file/d/1d-lwTGtivT8TEcUVi_p3VefDARnso9Lt/view?usp=drive_link" target="_blank" >
-                <button>My CV</button>
-            </a></li>
-            <li><a class="hover:text-indigo-400" href="#">Projects</a></li>
-            <li><a class="hover:text-indigo-400" href="#">Weblog</a></li>
-           </ul>
-        </section>
-        <!--- buttons -->
-        <a href="https://t.me/MajidiAi" target="_blank">
-            <button class="bg-indigo-400 text-white rounded-lg h-12 w-24  hover:bg-indigo-500 hover:border-solid hover:border-x">chat 
-                <i class="fa-brands fa-signal-messenger"></i>
-            </button>
-        </a>
-    </header>
+        <div class="flex items-center gap-12">
+            <!--selection menu -->
+            
+        <section class="hidden lg:block">
+            
+            <ul class="flex justify-between gap-3 text-white">
+             <li> <a class="hover:text-indigo-400 " href="https://drive.google.com/file/d/1d-lwTGtivT8TEcUVi_p3VefDARnso9Lt/view?usp=drive_link" target="_blank" >
+                 <button>My CV</button>
+             </a></li>
+             <li><a class="hover:text-indigo-400" href="#">Projects</a></li>
+             <li><a class="hover:text-indigo-400" href="#">Weblog</a></li>
+            </ul>
+         </section>
+         
+         <!--- buttons -->
+         <a href="https://t.me/MajidiAi" target="_blank">
+             <button class="bg-indigo-400 text-white rounded-lg h-12 w-24  hover:bg-indigo-500 hover:border-solid hover:border-x">chat 
+                 <i class="fa-brands fa-signal-messenger"></i>
+             </button>
+         </a>
+         <div class="lg:hidden">
+            <a href="#">
+                <i class="fa-solid fa-bars text-white"></i>
+            </a>
+         </div>
+        </div>
+    </nav>
     <!---- container ---->
     <div class=" h-dvh w-full flex text-blue-100 gap-x-2 ">
         <!-- inner container left-->
-        <div class="inner-container-left w-2/6 h-6/6">
-            <div class="image h-4/6 w-full bg-zinc-900 rounded-lg"><h1>test1</h1></div>
-            <div class="content-me h-2/6 w-full  bg-zinc-950 border-solid border-zinc-600 border rounded-lg">
-                <h1 class="text-4xl font-bold p-4">Language</h1>
+        <div class=" w-2/6 h-6/6 ">
+            <!-- 1st box image-->
+            <section class="mb-2 lg:h-4/6 h-4/6 w-full bg-zinc-900 rounded-lg ">
+               <a href="#" class="">
+                <img class="h-auto max-w-full" src="/img/i1.png" alt="MusicPlayerProject ">
+               </a>
+               <div class="lg:hidden ">
+                <a href="#">
+                    <img class="h-auto max-w-full" src="/img/i1.png" alt="MusicPlayerProject">
+                   </a>
+                   <a href="#">
+                    <img class="h-auto max-w-full" src="/img/i1.png" alt="MusicPlayerProject">
+                   </a>
+                   <a href="#">
+                    <img class="h-auto max-w-full" src="/img/i1.png" alt="MusicPlayerProject">
+                   </a>
+                   <a href="#">
+                    <img class="h-auto max-w-full" src="/img/i1.png" alt="MusicPlayerProject">
+                   </a>
+               </div>
+      
+            </section>
+            <!-- 2nd box, language -->
+            <div class=" h-2/6 w-full bg-zinc-950 border-solid border-zinc-600 border rounded-lg hidden lg:block">
+                <h1 class=" text-4xl font-bold p-4">Language</h1>
                 <ul class="p-4 ">
                     <li>Persian</li>
                     <li>English</li>
@@ -50,27 +81,26 @@
         </div>
 
         <!--- inner container middel --->
-        <div class="inner-container-middel h-6/6 w-3/6 ">
+        <div class="inner-container-middel w-3/6 h-6/6 ">
             <!-- info box -->
-            <div class="info w-full h-4/6">
+            <div class="info w-full lg:h-4/6 h-3/6 lg:mb-2 mb-1">
                 <!-- my bio -->
-                <div class="content w-full h-3/6 bg-zinc-800 rounded-lg p-4  "> 
-                    <h1 class="text-4xl font-bold mb-32">I'm Parastoo</h1>
-                    <p class="font-lg">
-                        luremepsumluremepsumluremepsumluremepsumluremepsumluremepsumluremepsumluremepsum
-                        luremepsumluremepsumluremepsumluremepsumlurem lu luremepsumluremepsumlurem
-                        epsumluremepsumlurem lu remepsumluremepsumluremepsumluremepsumluremremepsumluremepsu
+                <div class=" mb-1 w-full lg:h-3/6 h-full bg-zinc-800 rounded-lg p-4 place-content-start "> 
+                    <h1 class="text-4xl font-bold mb-4">I'm Parastoo</h1>
+                    <p class="font-lg ">
+                        I’m an experienced product designer with a passion for creating innovative solutions. With +3 years of experience in product design. 
+                        I'm strong in social communication, patient, and accurate. I am diligent in follow-up, accountability, detail-oriented and problem-solving.
                     </p>
                 </div>
                 <!-- inner info box -->
-                <div class="inner-info-group flex h-2/4 ">
+                <div class="inner-info-group lg:flex lg:h-2/4 hidden lg:block ">
                     <div class="skills w-5/6 bg-indigo-700 rounded-lg p-4">
                         <h1 class="text-4xl font-bold">Skills</h1>
                         <ul>
                             <li>test1</li>
                             <li>test1</li>
                             <li>test1</li>
-                            <li> test1</li>
+                            <li>test1</li>
                         </ul>
                     </div>
                     <!-- my location -->
@@ -81,8 +111,8 @@
                 </div>
             </div>
             <!-- stack box-->
-            <div class="stack h-2/6 w-full bg-zinc-800 rounded-lg font-bold p-2">
-                <h1 class="text-4xl "> Stack</h1>
+            <div class="stack lg:h-2/6 h-1/6 w-full bg-zinc-800 rounded-lg font-bold p-2">
+                <h1 class="text-4xl"> Stack</h1>
                 <!-- icons -->
                 <div class="text-3xl mt-4 text-indigo-300">
                     <i class="fa-brands fa-figma"></i>
@@ -96,13 +126,11 @@
                     <i class="fa-brands fa-react"></i> -->
                 </div>
                 <!-- fact -->
-                <div class="flex font-bold text-xs text-gray-500 mt-36">
+                <div class="flex font-bold text-xs text-gray-500 lg:mt-36 mt-4">
                     <h6 >i can find the tailwind icon so 
                         <i class="fa-solid fa-wind"></i>
                         equal Tailwind :)
-                    </h6>
-                    
-
+                    </h6> 
                 </div>
             </div>
         </div>
@@ -110,37 +138,37 @@
         <!--- inner container right--->
         <div class="socialmedia h-6/6 w-1/6 text-sm ">
             <!--- my link -->
-            <div class=" w-full bg-pink-500 lg:h-2/6 rounded-lg  ">
+            <div class=" w-full bg-indigo-500 lg:h-2/6 h-4/6 rounded-lg lg:mb-2  ">
                 <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-3 flex items-center justify-center  ">
                     <!-- text -->
                     <div class="bg-none rounded-md">
-                        <h1 class="text-4xl text-black font-black">Lin<br>ks</h1>
+                        <h1 class="text-4xl text-gray-100 font-black">Lin<br>ks</h1>
                          
                     </div>
                     <!-- link 2 -->
-                    <div class="bg-white p-2 rounded-md">
-                        <i class="fa-solid fa-basketball text-5xl text-black"></i>
-                   </div>
-                   <!-- link 3-->
-                   <div class="bg-white p-2 rounded-md">
-                    <i class="fa-solid fa-basketball text-5xl text-black "></i>
-                   </div>
-                       <!--link 1-->
-                       <div class="bg-white p-2 rounded-md">
-                        <i class="fa-solid fa-basketball text-5xl text-black "></i>
-                   </div>
+                    <div class="bg-indigo-600 p-2 rounded-md">
+                        <i class="fa-solid fa-basketball text-5xl text-gray-200"></i>
+                    </div>
                    <!-- link 2 -->
-                   <div class="bg-white p-2 rounded-md">
-                       <i class="fa-solid fa-basketball text-5xl text-black "></i>
-                  </div>
-                  <!-- link 3-->
-                  <div class="bg-white p-2 rounded-md">
-                   <i class="fa-solid fa-basketball text-5xl text-black "></i>
-                  </div>
+                    <div class="bg-indigo-600 p-2 rounded-md">
+                    <i class="fa-solid fa-basketball text-5xl text-gray-200"></i>
+                    </div>
+                   <!-- link 2 -->
+                    <div class="bg-indigo-600 p-2 rounded-md">
+                        <i class="fa-solid fa-basketball text-5xl text-gray-200"></i>
+                    </div>
+                    <!-- link 2 -->
+                    <div class="bg-indigo-600 p-2 rounded-md">
+                        <i class="fa-solid fa-basketball text-5xl text-gray-200"></i>
+                    </div>
+                   <!-- link 2 -->
+                    <div class="bg-indigo-600 p-2 rounded-md">
+                    <i class="fa-solid fa-basketball text-5xl text-gray-200"></i>
+                    </div>  
                 </div>
             </div>
             <!-- recent clients -->
-             <div class="clients w-full lg:h-4/6 bg-zinc-900 rounded-lg">
+             <div class="clients w-full lg:h-4/6 bg-zinc-900 rounded-lg hidden lg:block">
                 <h1 class="font-bold text-3xl pt-6 p-3">Recent Clients</h1>
                <div>
                     <!--- cv -->
@@ -188,65 +216,13 @@
                         </div>
                     </div>
                </div>
-
-
              </div>
         </div>
-
     </div>
    </div>
 </body>
 </html>
 
 
-<!-- <div class="icons">
-    <div class="container h-16 w-16 bg-white rounded-lg ">
-        <i class="fa-solid fa-basketball text-5xl text-black "></i>
-        
-    </div>
-</div> -->
 
 
-
-<nav class="bg-white border-gray-200 ">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-          </li>
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-    </svg></button>
-              <!-- Dropdown menu -->
-              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                  </div>
-              </div>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
